@@ -69,8 +69,9 @@ const handleSubmit = async (e: React.FormEvent) => {
   },
 ],
 services: {
-  connect: form.services.map((id) => ({ id: Number(id) })),
+  connect: form.services.map((id) => Number(id)),
 },
+
 
       stati: form.stati,
     };
